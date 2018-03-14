@@ -64,14 +64,24 @@ let updateWidget = function(data) {
             document.getElementById("bbcReadMore").href = readMoreOnBBC
             let readMoreOnBBC1 = bbcNewsData.articles[1].url
             document.getElementById("bbcReadMore1").href = readMoreOnBBC1
+            let readMoreOnBBC1Title = bbcNewsData.articles[1].title
+            document.getElementById("bbcReadMore1").text = readMoreOnBBC1Title
             let readMoreOnBBC2 = bbcNewsData.articles[2].url
             document.getElementById("bbcReadMore2").href = readMoreOnBBC2
+            let readMoreOnBBC2Title = bbcNewsData.articles[2].title
+            document.getElementById("bbcReadMore2").text = readMoreOnBBC2Title
             let readMoreOnBBC3 = bbcNewsData.articles[3].url
             document.getElementById("bbcReadMore3").href = readMoreOnBBC3
+            let readMoreOnBBC3Title = bbcNewsData.articles[3].title
+            document.getElementById("bbcReadMore3").text = readMoreOnBBC3Title
             let readMoreOnBBC4 = bbcNewsData.articles[4].url
             document.getElementById("bbcReadMore4").href = readMoreOnBBC4
+            let readMoreOnBBC4Title = bbcNewsData.articles[4].title
+            document.getElementById("bbcReadMore4").text = readMoreOnBBC4Title
             let readMoreOnBBC5 = bbcNewsData.articles[5].url
             document.getElementById("bbcReadMore5").href = readMoreOnBBC5
+            let readMoreOnBBC5Title = bbcNewsData.articles[5].title
+            document.getElementById("bbcReadMore5").text = readMoreOnBBC5Title
           }
           let getBBCNews = function(event) {
           fetch('https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=f83bc92fbd45489d8d538f786de05d78').then(convertToJSON).then(updategetBBCNewsWidget)
